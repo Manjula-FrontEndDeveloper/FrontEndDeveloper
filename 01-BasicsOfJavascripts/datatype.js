@@ -21,5 +21,5 @@ let resume=null //this is null data type
 
 //objects
 
-//console.log(typeof 'email')
-console.log(typeof 'null')
+console.log(typeof 'email')
+console.log(typeof 'null') // it is object
