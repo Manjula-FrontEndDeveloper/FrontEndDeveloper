@@ -3,7 +3,7 @@ var emailId='man@gmail.com'
 let passWord='123'
 myCity='bangalore'
 let accountState
-let accountCity=''
+let accountCity=null
 
 emailId='manjula@ymail.com'
 passWord='2356'
