@@ -31,6 +31,57 @@ let someNumber=33
 let changeToString=String(someNumber)
 console.log(typeof changeToString)
 
+/*******************Operations**********************/
+
+let someValue=5
+let negValue=-someValue
+console.log(negValue);
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*3);
+console.log(2**3);
+console.log(2/2);
+console.log(2%3);
+
+let str1='Manjula'
+let str2=' V'
+let str3= str1 + str2
+console.log(str3);
+
+console.log(1+'2');
+console.log('1'+2);
+console.log(1+2+'2');
+console.log('1'+2+2);
+console.log(1+2*3/8%7);
+
+console.log(+true);
+console.log(+'');
+
+let num1, num2, num3
+console.log(num1=num2=num3=2+2);
+
+let counter1=100
+++counter1
+console.log(counter1);
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
