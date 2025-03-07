@@ -35,3 +35,26 @@ const myFunction = function(){
     
 }
 console.log(typeof bigNumber);
+
+
+//***************************Note on Menmory*******************************************/
+
+// Stack(Primitive) --> whatever changes you do will be in copy of original value but not in original value
+let myName='Manjula'
+
+let otherName=myName
+otherName='Venkatappa'
+
+console.log(`myName:${myName}`);
+console.log(`otherName:${otherName}`);
+
+// Heap(Non-Primitive)--> whatever changes you will do will be in original value, not in a copy
+let userOne={
+    nameOne:'Sriram',
+    email:'sriram@gmail.com'
+}
+let userTwo=userOne
+userTwo.nameOne='Manjula'
+console.log(userOne.nameOne);
+console.log(userTwo.nameOne);
+
