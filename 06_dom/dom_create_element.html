@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+    <style>
+        body{
+         background:#666; 
+         color:rgb(238, 238, 238);   
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Element using JS</h1>
+    <ul class="language">
+        <li>JavaScript</li>       
+    </ul>
+    
+</body>
+<script>
+  function addElement(lagName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${lagName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addElement('HTML')
+    addElement('CSS')
+    addElement('ReactJS')
+//-------------------------------------------------------
+
+function addOptElement(lgName){
+  const li=  document.createElement('li');
+  li.appendChild(document.createTextNode(lgName))
+document.querySelector('.language').appendChild(li)
+}
+addOptElement('Bootstrap')
+
+//---------------------edit one-----------------------------
+
+const replaceSecondLi= document.querySelector('li:nth-child(2)')
+replaceSecondLi.innerHTML='Python'
+
+const createOneList=document.createElement('li')
+const replaceWithOne=document.querySelector('li:nth-child(3)')
+createOneList.textContent='Figma'
+replaceWithOne.replaceWith(createOneList)
+
+//---------------------edit two-----------------------------
+
+const firstLang=document.querySelector('li:nth-child(1)')
+firstLang.outerHTML='<li>TypeScript</li>'
+
+//---------------------to remove-----------------------------
+const removeLast=document.querySelector('li:last-child')
+removeLast.remove()
+
+</script>
+</html>
